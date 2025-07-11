@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-900 text-white min-h-screen flex flex-col items-center justify-center p-6">
+
+  <h1 class="text-4xl font-bold mb-8">Rock Paper Scissors</h1>
+
+  <!-- Ready Section -->
+  <div id="ready-section" class="flex flex-col items-center space-y-4">
+    <button id="ready-btn" class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-lg font-semibold">
+      ✅ Are You Ready?
+    </button>
+    <button id="start-btn" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-xl text-lg font-semibold hidden">
+      🚀 Get Started
+    </button>
+  </div>
+
+  <!-- Game Section (Hidden by default) -->
+  <div id="game-section" class="hidden flex flex-col items-center">
+    <!-- Buttons Section -->
+    <div class="flex space-x-4 mb-8 mt-8">
+      <button id="rock" class="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-xl text-lg font-semibold">🥌 Rock</button>
+      <button id="paper" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-lg font-semibold">📄 Paper</button>
+      <button id="scissors" class="px-6 py-3 bg-yellow-600 hover:bg-yellow-700 rounded-xl text-lg font-semibold">✂️ Scissors</button>
+    </div>
+
+    <!-- Result Display -->
+    <div id="result" class="text-2xl font-medium mb-4">Make your choice!</div>
+
+    <!-- Scoreboard -->
+    <div class="text-lg space-y-1">
+      <div>👤 You: <span id="player-score">0</span></div>
+      <div>🤖 Computer: <span id="computer-score">0</span></div>
+    </div>
+  </div>
+
+</body>
+</html>
