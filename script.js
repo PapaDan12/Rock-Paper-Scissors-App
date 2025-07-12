@@ -20,7 +20,7 @@ const choices = ['rock', 'paper', 'scissors'];
 
 // Handle "Are You Ready?" button
 readyBtn.addEventListener('click', () => {
-  readyBtn.textContent = "👍 Great!";
+  readyBtn.style.display = "none";
   startBtn.classList.remove('hidden');
 });
 
